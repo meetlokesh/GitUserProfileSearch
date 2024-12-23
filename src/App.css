@@ -1,0 +1,95 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+.search-container{
+  width: 100%;
+  padding: 50px;
+}
+ul{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+}
+
+.button-link {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-link:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-link:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .button-link {
+    padding: 16px 48px;
+  }
+}
+
+.search-input{
+  margin-right: 10px;
+
+  padding: 7px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid transparent;
+  height: 36px;
+  box-shadow: 0 0 0 1px #dddddd, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%);
+  :focus{
+      border: 2px solid #000;
+      border-radius: 4px;
+  }
+
+
+}
+.search-history{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-history li{
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.search-history li button{
+  margin-left: 10px;
+}
